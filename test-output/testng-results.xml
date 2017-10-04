@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Execution" duration-ms="29745" started-at="2017-10-04T06:45:47Z" finished-at="2017-10-04T06:46:16Z">
+    <groups>
+    </groups>
+    <test name="Naukri" duration-ms="29745" started-at="2017-10-04T06:45:47Z" finished-at="2017-10-04T06:46:16Z">
+      <class name="com.naukri.testCases.NaukriLogin">
+        <test-method status="PASS" signature="pre(java.lang.String)[pri:0, instance:com.naukri.testCases.NaukriLogin@ae45eb6]" name="pre" is-config="true" duration-ms="8604" started-at="2017-10-04T12:15:47Z" finished-at="2017-10-04T12:15:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pre -->
+        <test-method status="PASS" signature="mainMethod()[pri:0, instance:com.naukri.testCases.NaukriLogin@ae45eb6]" name="mainMethod" duration-ms="21049" started-at="2017-10-04T12:15:55Z" finished-at="2017-10-04T12:16:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mainMethod -->
+        <test-method status="PASS" signature="post()[pri:0, instance:com.naukri.testCases.NaukriLogin@ae45eb6]" name="post" is-config="true" duration-ms="77" started-at="2017-10-04T12:16:16Z" finished-at="2017-10-04T12:16:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- post -->
+      </class> <!-- com.naukri.testCases.NaukriLogin -->
+    </test> <!-- Naukri -->
+  </suite> <!-- Execution -->
+</testng-results>

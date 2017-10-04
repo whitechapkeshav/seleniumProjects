@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Execution]">
+  <parameter name="browser" value="firefox"/>
+  <test name="Naukri(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.naukri.testCases.NaukriLogin">
+        <methods>
+          <include name="main"/>
+          <include name="post"/>
+          <include name="pre"/>
+        </methods>
+      </class> <!-- com.naukri.testCases.NaukriLogin -->
+    </classes>
+  </test> <!-- Naukri(failed) -->
+</suite> <!-- Failed suite [Execution] -->
