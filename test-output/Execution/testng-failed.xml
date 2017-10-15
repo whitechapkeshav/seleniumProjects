@@ -7,7 +7,7 @@
     <classes>
       <class name="com.naukri.testCases.NaukriLogin">
         <methods>
-          <include name="main"/>
+          <include name="mainMethod"/>
           <include name="post"/>
           <include name="pre"/>
         </methods>
