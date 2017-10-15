@@ -8,7 +8,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class TestUtil {
 
-	public static Object[][] getData(String sheet, String testname) {
+/*	public static Object[][] getData(String sheet, String testname) {
 		Object[][] data = new Object[1][1];
 		try {
 			File f = new File("data\\Naukri.xlsx");
@@ -22,5 +22,5 @@ public class TestUtil {
 		}
 		return data;
 	}
-
+*/
 }
