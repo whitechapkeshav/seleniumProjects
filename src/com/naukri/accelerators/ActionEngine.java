@@ -2,6 +2,7 @@ package com.naukri.accelerators;
 
 import java.io.File;
 
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -23,24 +24,27 @@ public class ActionEngine {
 
 		this.browsers = browser;
 		if (browser.equalsIgnoreCase("firefox")) {
+			DesiredCapabilities capa = DesiredCapabilities.firefox();
+			capa.setVersion("36");
+			capa.setPlatform(Platform.WINDOWS);
 			driver = new FirefoxDriver();
 		}
 		if (browser.equalsIgnoreCase("ie")) {
 			DesiredCapabilities capabilities = DesiredCapabilities.internetExplorer();
 
-//			capabilities.setCapability(CapabilityType.BROWSER_NAME, "IE");
-//			capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
+			capabilities.setCapability(CapabilityType.BROWSER_NAME, "IE");
+			capabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
 
 			File file = new File("Drivers\\IEDriverServer32.exe");
 			System.setProperty("webdriver.ie.driver", file.getAbsolutePath());
 			driver = new InternetExplorerDriver(capabilities);
 		}
 		if (browser.equalsIgnoreCase("chrome")) {
-			/*
-			 * DesiredCapabilities cap = DesiredCapabilities.chrome();
-			 * cap.setCapability("version", "61.0");
-			 * cap.setCapability("platform", "windows");
-			 */
+
+			DesiredCapabilities cap = DesiredCapabilities.chrome();
+			cap.setCapability("version", "61.0");
+			cap.setCapability("platform", "windows");
+
 			File file = new File("Drivers\\chromedriver.exe");
 			System.setProperty("webdriver.chrome.driver", file.getAbsolutePath());
 			driver = new ChromeDriver();
